@@ -1,23 +1,7 @@
-<!-- 
 <?php
 $access_token = 'LWo+NBkri6dqQTeOgvwvkcVfgcgqH8+oalCcCkd5j5rlnEZeyuKiWspveS5sM48zj5iaoQ+AcD2fWS2M2kY4y2fNq4Uf5Zr98Yy9M1VUO1c8WBDwqBpK4kYAu7ONXu7scQmAPUcI1gxSrn0x64/2bAdB04t89/1O/w1cDnyilFU=';
 $channel_secret = 'e7caca43af934c66264a0fd1fed02455';
-$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
-$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channel_secret]);
-// $response = $bot->replyText('<reply token>', 'hello!');
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
-$response = $bot->replyMessage('<reply token>', $textMessageBuilder);
-if ($response->isSucceeded()) {
-    echo 'Succeeded!';
-    return;
-}
-
-// Failed
-echo $response->getHTTPStatus . ' ' . $response->getRawBody();
- -->
-
-<?php
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
