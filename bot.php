@@ -1,3 +1,4 @@
+<!-- 
 <?php
 $access_token = 'LWo+NBkri6dqQTeOgvwvkcVfgcgqH8+oalCcCkd5j5rlnEZeyuKiWspveS5sM48zj5iaoQ+AcD2fWS2M2kY4y2fNq4Uf5Zr98Yy9M1VUO1c8WBDwqBpK4kYAu7ONXu7scQmAPUcI1gxSrn0x64/2bAdB04t89/1O/w1cDnyilFU=';
 $channel_secret = 'e7caca43af934c66264a0fd1fed02455';
@@ -14,8 +15,9 @@ if ($response->isSucceeded()) {
 
 // Failed
 echo $response->getHTTPStatus . ' ' . $response->getRawBody();
+ -->
 
-/*
+<?php
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -60,4 +62,3 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-*/
